@@ -1,0 +1,11 @@
+#include<stdio.h>
+int change_value(int *n){
+*n=100;
+}
+int main(){
+int number=5;
+printf("\nbefore number,%d",number);
+change_value(&number);
+printf("\nafter number,%d",number);
+return 0;
+}
